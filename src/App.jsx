@@ -1,16 +1,19 @@
 import { useState } from "react";
 import Loader from "./components/Loader";
 import Hero from "./sections/Hero";
+import About from "./sections/About";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
 
-  return loading ? (
-    <Loader onComplete={() => setLoading(false)} />
-  ) : (
+  if (loading) {
+    return <Loader onComplete={() => setLoading(false)} />;
+  }
+
+  return (
     <main>
       <Hero />
-      {/* Next: About, Menu, Gallery and Contact sections */}
+      <About />
     </main>
   );
 }

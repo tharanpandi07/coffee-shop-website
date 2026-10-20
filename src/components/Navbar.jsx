@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Coffee } from "lucide-react";
+import { Coffee, Menu, X } from "lucide-react";
 import "../styles/navbar.css";
 
 const links = [
@@ -20,7 +20,9 @@ export default function Navbar() {
         onClick={() => setMenuOpen(false)}
       >
         <Coffee size={25} />
-        <span>COFFE<span className="gold">.</span></span>
+        <span>
+          COFFE<span className="gold">.</span>
+        </span>
       </a>
 
       <button
@@ -29,7 +31,7 @@ export default function Navbar() {
         aria-label="Toggle navigation"
         aria-expanded={menuOpen}
       >
-        {menuOpen ? <X /> : <Menu />}
+        {menuOpen ? <X size={26} /> : <Menu size={26} />}
       </button>
 
       <nav className={'nav-links ${menuOpen ? "nav-open" : ""}'}>
