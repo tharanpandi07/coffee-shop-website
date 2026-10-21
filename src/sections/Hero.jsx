@@ -36,10 +36,7 @@ export default function Hero() {
             </p>
 
             <h1>
-              A LITTLE
-              <br />
-              SLOWER.
-              <br />
+              A LITTLE SLOWER,
               <span className="hero-highlight">
                 A LOT BETTER.
               </span>
