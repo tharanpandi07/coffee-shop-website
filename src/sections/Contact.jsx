@@ -37,7 +37,7 @@ function Contact() {
   };
 
   return (
-    <main className="contact-page">
+    <main className="contact-page" id="contact">
       {/* Hero Section */}
       <section className="contact-hero">
         <p className="contact-eyebrow">

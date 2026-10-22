@@ -78,7 +78,7 @@ function Menu() {
         );
 
   return (
-    <main className="menu-page">
+    <main className="menu-page" id="menu">
       <section className="menu-hero">
         <p className="menu-eyebrow">CRAFTED WITH PASSION</p>
 

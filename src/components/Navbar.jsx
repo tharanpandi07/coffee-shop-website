@@ -6,6 +6,7 @@ const links = [
   { label: "Home", href: "#home" },
   { label: "Our Story", href: "#about" },
   { label: "Menu", href: "#menu" },
+  { label: "Gallery", href: "#gallery" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -34,7 +35,7 @@ export default function Navbar() {
         {menuOpen ? <X size={26} /> : <Menu size={26} />}
       </button>
 
-      <nav className={'nav-links ${menuOpen ? "nav-open" : ""}'}>
+      <nav className={`nav-links ${menuOpen ? "nav-open" : ""}`}>
         {links.map((link) => (
           <a
             key={link.href}
